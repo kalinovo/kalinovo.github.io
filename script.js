@@ -1,1 +1,3 @@
-document.getElementById("heading").innerHTML = "Kalinovo!";
+window.onload = function() {
+  document.getElementById("heading").innerHTML = "Kalinovo!";
+}
