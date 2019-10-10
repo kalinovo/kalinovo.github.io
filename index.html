@@ -11,28 +11,119 @@
       }
       
       body {
-        background: rgb(0,76,140);
-        background: -moz-linear-gradient(45deg, rgba(0,76,140,1) 0%, rgba(109,230,255,1) 100%);
-        background: -webkit-linear-gradient(45deg, rgba(0,76,140,1) 0%, rgba(109,230,255,1) 100%);
-        background: linear-gradient(45deg, rgba(0,76,140,1) 0%, rgba(109,230,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004c8c",endColorstr="#6de6ff",GradientType=1);
+        /*background: rgb(0,76,140);*/
+        /*background: linear-gradient(45deg, rgba(0,76,140,1) 0%, rgba(109,230,255,1) 100%);*/
+	background: #2A65A6;
+	background: linear-gradient(45deg, #20355F 0%, #35AFBF 100%);
         
         height: 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
+
+	text-align: center;
       }
       
-      #dateDiv {
+      .header {
+	margin: 0px 0px 0px 0px;
         color: white;
         width: 100%;
         text-align: center;
+	font-size: 42px;
       }
+
+      .temperatureDiv {
+	margin: 55px 0px 30px 0px;
+        color: white;
+        width: 100%;
+	height: 35px;
+        text-align: center;
+	font-size: 24px;
+	vertical-align: middle;
+      }
+
+      .temperatureDisplay {
+	color: #DDDDDD;
+        width: 100px;
+	height: 35px;
+        text-align: center;
+	font-size: 26px;
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+	line-height: 35px;
+      }
+
+      .temperatureDisplay.center {
+	color: white;
+	font-size: 36px;
+      }
+
+      #weatherIcon {
+	width: 200px;
+	height: 127px;
+	
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;		
+      }
+
+
+      .statusDiv {
+	margin: 0px 0px 10% 0px;
+        color: white;
+        width: 100%;
+	height: 35px;
+        text-align: center;
+	font-size: 28px;
+        vertical-align: middle;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .chart-container {
+        width: 70%;
+        max-width: 800px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+}
     </style>
   </head>
-  <body>
-    <div id="dateDiv">
-      Kalinovo - 10. Október
+  <body onload="displayCharts()">
+    <p class="header" style="margin-top: 5%;">Kalinovo</p>
+    <p class="header" style="font-size: 24px; color: #DDDDDD;">Štvrtok, 10. Október</p>
+
+    <div class="temperatureDiv">
+	<div class="temperatureDisplay">7&#176;C</div>
+	<div class="temperatureDisplay center">10&#176;C</div>
+	<div class="temperatureDisplay">14&#176;C</div>
     </div>
 
+    <img src="./cloudy.png" id="weatherIcon">
+
+    <div class="statusDiv">Zamračené</div>
+
+    <div class="container">
+        <div class="chart-container">
+            <canvas id="temperatureChart" style="display: block;"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="precipitationChart" style="display: block;"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="cloudsChart" style="display: block;"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="pressureChart" style="display: block;"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="windChart" style="display: block;"></canvas>
+        </div>
+    </div>
   </body>
 </html>
