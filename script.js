@@ -20,7 +20,7 @@ function displayTemperatureChart() {
                 pointBackgroundColor: "#FFFFFF",
                 pointBorderColor: "#FFFFFF",
                 pointHoverBackgroundColor: "#55bae7",
-                pointHoverBorderColor: "#55bae7",
+                pointHoverBorderColor: "#000000",
                 data: [10,11,10,9,10,12,14,13,12,10,8,7,6]
             },
         ]
@@ -53,7 +53,7 @@ function displayPrecipitationChart() {
                 pointBackgroundColor: "#FFFFFF",
                 pointBorderColor: "#FFFFFF",
                 pointHoverBackgroundColor: "#55bae7",
-                pointHoverBorderColor: "#55bae7",
+                pointHoverBorderColor: "#000000",
                 data: [0.4,0,0,0,0,0,0,0,0,0,0,0,0]
             },
         ]
@@ -77,7 +77,7 @@ function displayCloudsChart() {
                 pointBackgroundColor: "#FFFFFF",
                 pointBorderColor: "#FFFFFF",
                 pointHoverBackgroundColor: "#55bae7",
-                pointHoverBorderColor: "#55bae7",
+                pointHoverBorderColor: "#000000",
                 data: [100,75,80,0,5,90,100,95,65,0,0,0,3]
             },
         ]
@@ -101,7 +101,7 @@ function displayPressureChart() {
                 pointBackgroundColor: "#FFFFFF",
                 pointBorderColor: "#FFFFFF",
                 pointHoverBackgroundColor: "#55bae7",
-                pointHoverBorderColor: "#55bae7",
+                pointHoverBorderColor: "#000000",
                 data: [1011,1013,1014,1015,1017,1016,1016,1017,1018,1019,1020,1021,1022]
             },
         ]
@@ -128,7 +128,7 @@ function displayWindChart() {
                     pointBackgroundColor: "#FFFFFF",
                     pointBorderColor: "#FFFFFF",
                     pointHoverBackgroundColor: "#55bae7",
-                    pointHoverBorderColor: "#55bae7",
+                    pointHoverBorderColor: "#000000",
                     data: [2,3,4,3,3,2,4,5,4,2,3,1,2]
                 },
                 {

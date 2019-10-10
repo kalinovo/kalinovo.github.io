@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.bundle.js"></script>
+    <script src="./chart.bundle.js"></script>
     <script src="./script.js"></script>
     <title>Stalinovo</title>
     
@@ -67,8 +67,17 @@
   	margin-right: auto;		
       }
 
-
       .statusDiv {
+	margin: 0px 0px 30px 0px;
+        color: white;
+        width: 100%;
+	height: 35px;
+        text-align: center;
+	font-size: 28px;
+        vertical-align: middle;
+      }
+
+      .windDiv {
 	margin: 0px 0px 10% 0px;
         color: white;
         width: 100%;
@@ -90,8 +99,8 @@
         max-width: 800px;
         margin-left: 40px;
         margin-right: 40px;
-        margin-bottom: 20px;
-}
+        margin-bottom: 40px;
+      }
     </style>
   </head>
   <body onload="displayCharts()">
@@ -107,6 +116,7 @@
     <img src="./cloudy.png" id="weatherIcon">
 
     <div class="statusDiv">Zamračené</div>
+    <div class="windDiv">&#9780; 3 m/s, JZ</div>
 
     <div class="container">
         <div class="chart-container">
